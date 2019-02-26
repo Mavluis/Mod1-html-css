@@ -1,0 +1,83 @@
+h1 {
+    background: rebeccapurple;
+    color: yellow;
+}
+
+[data-rel~='Port'] {
+    background: peru;
+}
+
+#principal {
+    color: lime;
+}
+
+.parrafo {
+    background: lightblue
+}
+
+.cabecera {
+    font-size: 1.5rem;
+}
+
+[href] {
+    color: red;
+}
+
+[data-hackabos] {
+    border-bottom: 8px solid red;
+}
+
+[data-hackabos='modulo1'] {
+    border-bottom: 10px solid grey;
+}
+
+li:first-child {
+    background: yellow;
+}
+
+li:last-child {
+    background: purple;
+    border-bottom: 8px solid red;
+}
+
+li:nth-child {
+    background: red;
+}
+
+.destacado {
+    font-size: 2rem;
+}
+
+p:hover {
+    background: white;
+}
+
+p.especial::first-letter {
+    font-size: 2rem;
+    color: blue;
+}
+
+p::first-line {
+    font-size: 2rem;
+    color: blue;
+}
+
+p::selection {
+    font-size: 6rem;
+    color: blueviolet;
+}
+
+header p {
+    border-bottom: 2px solid;
+    color: burlywood;
+}
+
+body > p > strong{
+    border-bottom: 4px solid;
+    color: green;
+}
+
+#principal {
+    border: 4px solid;
+    color: blue !important;
+}
