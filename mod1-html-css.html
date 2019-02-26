@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="gl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Modulo 1 - html-css</title>
+    <meta name="description" content="Esta es la mejor pagina del mundo mundial">
+    <meta name="author" content="Luis Fdez">
+    <link rel="stylesheet" href="selectores-simples.css">
+  </head>
+  
+  <body>
+  
+    <header>
+      <h1>A web de Luis</h1>
+      <p>Movidas de HTML e videoxogos</p>
+      <a href="sobremin.html">Sobre min</href></a>
+    </header>
+
+    <main>
+      <section>
+        <h2>Cousas de HTML</h2>
+        <article>
+
+          <header>
+            <h1>Curso en Hack A Bos</h1>
+            <p>Con xente moi guai</p>
+            <em>20/2/2019</em>
+          </header>
+          
+          <header>
+           <section id="links">
+           <h1>Links favoritos</h1>
+            <nav>
+              <ul> 
+                <li><a href="http://www.google.es">Google</li></a>
+                <li><a href="http://www.wikipedia.org">Wikipedia</a></li>
+                <li><a href="#links">Enlaces</a></li>
+              </ul>
+            </nav>
+            </section>
+          </header>
+
+        <section id="historia">
+            <h2>Historia del mundo mundial</h2>
+            <p>La historia del mundo resumida</p>
+        </section>
+        
+<!-- <title>Listas ordenadas y desordenadas</title> -->
+
+            <h2>Listas ordenadas y desordenadas
+             <ul> 
+                <li>tecnólogos</li>
+                <li>pensadores</li>
+                <li>constructores</li>
+            </ul></h2>
+
+            <ol type="I"> 
+                <li>tecnólogos</li>
+                <ul> 
+                        <li>tecnólogos</li>
+                        <li>pensadores</li>
+                        <li>constructores</li>
+                    </ul>
+                <li>pensadores</li>
+                <li>constructores</li>
+            </ol>
+
+        <section id="definicion">
+                <h2>Definiciones</h2>
+                <dl>
+                    <dt>Unos</dt>
+                    <dd>Unos</dd>
+                    <dt>Unos</dt>
+                    <dd>Unos</dd>
+                </dl>
+        </section>
+
+        <section id="noticias">
+            <h2>Noticias</h2>
+            <article>
+                <header>
+                    <h1>Ha salido los proyectores 16K</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit.</p>
+                </header>
+                <p>Labore impedit nemo 
+                        veniam, error aperiam aspernatur 
+                        accusamus, officiis, nesciunt voluptas 
+                        ducimus atque porro doloribus ipsam 
+                        saepe dignissimos? Quis nihil 
+                        accusantium fugiat?</p>
+
+                    <aside>
+                        <p>Para colocar una foto. no se utiliza mucho</p>
+                    </aside>
+            
+          <h2>Material do curso</h2>
+          <aside>Chama ao número 90003939393 para apuntarte</aside>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+            harum, totam deleniti illo, perferendis placeat eum labore repellat
+            dolorem itaque eveniet impedit debitis rerum odit, corrupti velit at
+            laboriosam cum?
+          </p>
+        </article>
+      </section>
+    </main>
+    
+<!-- <title>Imagenes, audio y video</title> -->
+
+    <img src="/media/phantom.png"  width="300" alt="Phantom 4" title="Phantom 4!!!">
+    <img src="/media/torre.jpg" alt="Torre de Hercules" width="300">
+
+    <audio src="media/SampleAudio_0.7mb.mp3" --autoplay controls loop muted></audio>
+    <video src="media/R2D2.mp4" poster="media/phantom.png" controls loop width="100%"></video>
+    
+<!-- <title>Formularios> -->
+
+    <h1>Formulario</h1>
+    <form action="." method="GET">
+        
+        <fieldset>
+            <legend>Datos del formulario</legend>
+            <label for="Nombre">Nombre:</label>
+            <input required type="text" name="nombre" id="Nombre" autofocus maxlength="10" placeholder="No escribas....">
+            <label for="Correo">E-mail:</label>
+            <input type="email" name="Correo Electronico" id="Correo">
+        </fieldset>
+
+        <fieldset>
+            <legend>Pon la password</legend>    
+            <label for="Password">E-mail:</label>
+            <input type="password" name="contraseña" id="Password">
+        </fieldset>
+
+        <fieldset>
+            <legend>Pon tu Web</legend>  
+            <label for="Url">E-mail:</label>
+            <input type="url" name="web" id="Url">
+        </fieldset>
+
+        <fieldset>
+                <legend>Biografia</legend>  
+                <label for="Bio">Biografia:</label>
+                <textarea name="bio" id="Bio" rows="2" cols="70"></textarea>
+            <label for="Provincia">Provincia:</label>
+            <select name="Provincia" id="Provincia" size="" --multiple>            
+                <option>Escoge la provincia...</option>
+            <optgroup label="Provincias Norte...">
+                <option value="La Coruña">La Coruña</option>
+                <option value="Lugo">Lugo</option>
+            </optgroup>
+
+            <optgroup label="Provincias Sur...">
+                <option value="Orense" disabled>Orense</option>
+                <option value="Pontevedra">Pontevedra</option>
+            </optgroup>
+
+            </select>
+            </fieldset>
+
+            <fieldset>
+            <legend>Mas cosas...</legend>
+            <label>Marca si eres guay</label>
+            <input type="checkbox" name="carta" id="carta">
+            <label>Copyright</label>
+            <input type="checkbox" name="Copyright" id="Copyright">
+        </fieldset>
+
+        <fieldset>
+            <legend>Comidas favoritas</legend>
+            <ul>
+                <li>
+                    <label for="Pimientos">Pimientos</label>
+                    <input type="radio" name="comidafavorita id="Pimientos">
+                </li>
+                <li>
+                    <label for="Sopa">Sopa</label>
+                    <input type="radio" name="comidafavorita id="Sopa" checked>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+                <legend>Otras cosas</legend>
+                
+                <label for="Edad">Edad</label>
+                <input type="number" name="Edad id="Pimientos" min="0" max="99" step="5">
+                
+                <label for="FechaNacimiento">Fecha Nacimiento</label>
+                <input type="datetime-local" name="FechaNacimiento id="FechaNacimiento" min="1999-12-31">
+                
+                <label for="Color">Colores:</label>
+                <input type="color" name="Color id="Color" value="#d96868">
+                
+                <br>
+                <label for="Curriculum">Escoge tu CV:</label>
+                <input type="file" name="Curriculum id="Curriculum">
+                <br>
+                <label for="Rango">Arrastra esto:</label>
+                <input type="range" name="Rango" id="Rango" value="5" min="0" max="99" step="5">
+            </fieldset>
+<!-- Ctrl+Alt+7 en la linea, deja la linea como comentario -->
+    <button type="submit">Enviar</button>
+    <button type="reset">Reset</button>
+    <button type="button">Boton asociado .js</button>
+    </form>
+
+<!-- <title>Selectores simples</title> -->
+
+<body>
+    <header>
+    <h1 id="principal">Selectores simples</h1>
+    <p class="parrafo cabecera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt corporis 
+    voluptates numquam harum similique dicta quibusdam quidem.Magni architecto molestias pariatur deserunt obcaecati.</p>
+
+    <nav>
+        <ul>
+            <li class="destacado">Portada</li>
+            <li><a href="/interior.html">Interior</a></li>
+            <li class="especial"><a href="http://www.google.es">Google</a></li>
+        </ul>
+    </nav>
+    
+    <h1 id="principal">Select masssss</h1>
+    <p class="parrafo cabecera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt corporis 
+    voluptates numquam harum similique dicta quibusdam quidem.Magni architecto molestias pariatur deserunt obcaecati.</p>
+
+    </header>
+
+    <p class="especial">Otros selectores
+        Lorem ipsum, dolor sit amet consectetur <strong> elit. Molestias, aliquam dignissimos ratione 
+        corporis delectus non. </strong>alias, labore facilis.
+    </p>
+
+    <p class="especial"><a href="http://www.google.es">Google</a></p>
+
+    <h1 data-hackabos>HackaBOS</h1>
+
+    <h1 data-hackabos='modulo1'>OtroHackaBOS</h1>
+
+</body>
+
+<!-- <title>Direcciones</title> -->
+
+   <section id="elementos">
+        <h2>Direcciones</h2>
+        <address>
+            <p>Calle Juan Flores 101, La Coruña</p>
+            <a href="tel:981222222">981222222</a>
+        </address>
+
+        <h2>Parte de abajo - Cita de bloque</h2>
+        <blockquote>
+            <p><em>"La rana gustavo busca piso en Alcobendas"</em></p>
+            <footer>
+                <cite>Yo mismo</cite>
+            </footer>
+        </blockquote>
+        <p><em>Yo dije algo asi...</em></p><q cite="Mas de lo mismo">Otra cosa de lo mismo</q>
+   
+        <h2>Figuras e imagenes</h2>
+        <figure>
+            <img src="media/torre.jpg" alt="Imagen de la Torre" title="La Torre de Hercules" width="200">
+            <figcaption>Img Torre de Hercules</figcaption>
+        </figure>
+   
+        <h2>Texto preformateado</h2>
+        <pre>
+            la rana gustavo
+                    no se lo que hace
+                            pero me mira a mi.
+        </pre>
+
+        <h2>Abreviatures</h2>
+        <p>"La rana gustavo <abbr title="piso en Alcobendas...">busca...."</p>
+
+        <h2>Salto de linea</h2>
+        la rana gustavo<br>
+        no se lo que hace<br>
+        pero me mira a mi.<br>
+
+        <p>Estamos <em>en un curso</em> de <strong> a BOS.</strong></p>
+
+    </section>    
+
+<!-- <title>Tablas> -->
+
+   <table border="1">
+        
+        <caption>Tabla de prueba</caption>
+        
+        <thread>
+            <tr>
+                <th colspan="3">CELDA</th>
+            </tr>
+        </thread>
+       
+        <tbody>
+
+        <tr>
+                <td rowspan="3">Izquierda</td>
+                <td colspan="2">Media drcha</td>
+
+            </tr>
+
+            <tr>
+                    <td colspan="2">Media drcha</td>
+                </tr>
+
+            <tr>
+                    <td rowspan="3">Celda B</td>
+                    <td colspan="1">Celda B</td>
+                </tr>
+
+        </tbody>
+<td></td>
+<td></td>
+<td></td>
+        <tfoot>
+        <tr>
+                <td>Pie A</td>
+                <td>Pie B</td>
+                <td>Pie C</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+<!-- <title>Formularios</title> -->
+
+    <form action="." method="GET">
+        Nombre: <input required type="text" name="nombre" autofocus maxlength="10" placeholder="No escribas....">
+        <button type="submit">Enviar</button>
+        E-mail: <input type="email" name="Correo Electronico">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <form action="." method="GET">
+        Password: <input type="password" name="contraseña">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <form action="." method="POST">
+        Nombre: <input type="text" name="nombre" value="N0T0CAR" disabled>
+        <button type="submit" disabled>Enviar</button>
+    </form>
+
+<!-- <title>Pie de pagina</title> -->
+               <footer>
+                        <p>Gracias por visitar mi web.</p>
+                        <p>© 2019 Luis Fdez.</p>
+                </footer>
+  </body>
+
+</html>
